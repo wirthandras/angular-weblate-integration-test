@@ -9,6 +9,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "es-US": "src/locale/messages.es-US.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -19,6 +25,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "localize": true,
+            "i18nMissingTranslation": "warning",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -29,6 +37,14 @@
             "scripts": []
           },
           "configurations": {
+            "en-US": {
+              "localize": false,
+              "baseHref": "/en-US/"
+            },
+            "es-US": {
+              "localize": ["es-US"],
+              "baseHref": "/es-US/"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -64,6 +80,12 @@
             "browserTarget": "angular-weblate:build"
           },
           "configurations": {
+            "en-US": {
+              "browserTarget": "angular-weblate:build:en-US"
+            },
+            "es-US": {
+              "browserTarget": "angular-weblate:build:es-US"
+            },
             "production": {
               "browserTarget": "angular-weblate:build:production"
             }
