@@ -18,6 +18,16 @@
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1807398567117820367" datatype="html">
+        <source>Third translation</source>
+        <target>Tercera traducción</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Name of the table</note>
+        <note priority="1" from="meaning">Table header</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
