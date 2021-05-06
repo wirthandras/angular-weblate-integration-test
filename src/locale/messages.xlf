@@ -25,6 +25,14 @@
         <note priority="1" from="description">Name of the table</note>
         <note priority="1" from="meaning">Table header</note>
       </trans-unit>
+      <trans-unit id="2226815095451076885" datatype="html">
+        <source>Apple</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/test/test.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">test</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
