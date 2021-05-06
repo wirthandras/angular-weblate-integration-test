@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
+  hitCount: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
