@@ -7,3 +7,7 @@
       other { Search (view {{ hitCount }} results)}
     }
   </span>
+
+<div *ngIf="hitCount === 0; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock><div i18n>SearchWA</div></ng-template>
+<ng-template #elseBlock><div i18n>SearchWA (view {{ hitCount }} results)</div></ng-template>
