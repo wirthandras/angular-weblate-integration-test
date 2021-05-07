@@ -28,6 +28,14 @@
         <note priority="1" from="description">Name of the table</note>
         <note priority="1" from="meaning">Table header</note>
       </trans-unit>
+      <trans-unit id="7804096422523728368" datatype="html">
+        <source>(view <x id="INTERPOLATION" equiv-text="{{ hitCount }}"/> results)</source>
+        <target>(view <x id="INTERPOLATION" equiv-text="{{ hitCount }}"/> results)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/test/test.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
