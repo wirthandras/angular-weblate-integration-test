@@ -33,15 +33,8 @@
         </context-group>
         <note priority="1" from="description">test</note>
       </trans-unit>
-      <trans-unit id="4020952399040491511" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {Search } =1 {Search (view <x id="INTERPOLATION"/> result)} other {Search (view <x id="INTERPOLATION"/> results)}}</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">4,8</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8856905278208146821" datatype="html">
-        <source> <x id="ICU" equiv-text="{hitCount, plural, 
+      <trans-unit id="1722555695086014110" datatype="html">
+        <source> Test prefix <x id="ICU" equiv-text="{hitCount, plural, 
       =0 { Search }
       =1 { Search (view {{ hitCount }} result)}
       other { Search (view {{ hitCount }} results)}
@@ -49,6 +42,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
           <context context-type="linenumber">4,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4020952399040491511" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {Search } =1 {Search (view <x id="INTERPOLATION"/> result)} other {Search (view <x id="INTERPOLATION"/> results)}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/test/test.component.html</context>
+          <context context-type="linenumber">4,8</context>
         </context-group>
       </trans-unit>
     </body>
