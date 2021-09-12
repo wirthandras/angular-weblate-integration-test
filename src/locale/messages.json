@@ -1,0 +1,13 @@
+{
+  "locale": "en-US",
+  "translations": {
+    "3586289926317549995": "App works",
+    "9036341625315019227": "Second translation",
+    "1807398567117820367": "Third translation",
+    "2226815095451076885": "Apple",
+    "1722555695086014110": " Test prefix {$ICU} ",
+    "4020952399040491511": "{VAR_PLURAL, plural, =0 {Search } =1 {Search (view {INTERPOLATION} result)} other {Search (view {INTERPOLATION} results)}}",
+    "6545621178786913216": "SearchWA",
+    "7804096422523728368": "(view {$INTERPOLATION} results)"
+  }
+}
