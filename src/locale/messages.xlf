@@ -34,10 +34,17 @@
         <note priority="1" from="description">test</note>
       </trans-unit>
       <trans-unit id="1722555695086014110" datatype="html">
+<<<<<<< HEAD
         <source> Test prefix <x id="ICU" equiv-text="{hitCount, plural, 
       =0 { Search }
       =1 { Search (view {{ hitCount }} result)}
       other { Search (view {{ hitCount }} results)}
+=======
+        <source> Test prefix <x id="ICU" equiv-text="{hitCount, plural, 
+      =0 { Search }
+      =1 { Search (view {{ hitCount }} result)}
+      other { Search (view {{ hitCount }} results)}
+>>>>>>> b26b1ea736ee5d3266fe17a1ab2dd01f193ce93a
     }"/> </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
