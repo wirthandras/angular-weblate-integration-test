@@ -1,71 +1,77 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="en">
-    <body>
-      <trans-unit id="3586289926317549995" datatype="html">
-        <source>App works2</source>
-        <target>App works2</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="9036341625315019227" datatype="html">
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
+  <file id="ngi18n" original="ng.template">
+    <unit id="3586289926317549995">
+      <notes>
+        <note category="location">src/app/app.component.html:1</note>
+      </notes>
+      <segment>
+        <source>App works</source>
+      </segment>
+    </unit>
+    <unit id="9036341625315019227">
+      <notes>
+        <note category="location">src/app/app.component.html:2</note>
+      </notes>
+      <segment>
         <source>Second translation</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1807398567117820367" datatype="html">
+      </segment>
+    </unit>
+    <unit id="1807398567117820367">
+      <notes>
+        <note category="location">src/app/app.component.html:3</note>
+        <note category="description">Name of the table</note>
+        <note category="meaning">Table header</note>
+      </notes>
+      <segment>
         <source>Third translation</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <note priority="1" from="description">Name of the table</note>
-        <note priority="1" from="meaning">Table header</note>
-      </trans-unit>
-      <trans-unit id="2226815095451076885" datatype="html">
+      </segment>
+    </unit>
+    <unit id="2226815095451076885">
+      <notes>
+        <note category="location">src/app/test/test.component.html:2</note>
+        <note category="description">test</note>
+      </notes>
+      <segment>
         <source>Apple</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-        <note priority="1" from="description">test</note>
-      </trans-unit>
-      <trans-unit id="1722555695086014110" datatype="html">
-        <source> Test prefix <x id="ICU" equiv-text="{hitCount, plural,        =0 { Search }       =1 { Search (view {{ hitCount }} result)}       other { Search (view {{ hitCount }} results)}     }"/> </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">4,9</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4020952399040491511" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {Search } =1 {Search (view <x id="INTERPOLATION"/> result)} other {Search (view <x id="INTERPOLATION"/> results)}}</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">4,8</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6545621178786913216" datatype="html">
+      </segment>
+    </unit>
+    <unit id="1722555695086014110">
+      <notes>
+        <note category="location">src/app/test/test.component.html:4,9</note>
+      </notes>
+      <segment>
+        <source> Test prefix <ph id="0" equiv="ICU" disp="{hitCount, plural, 
+      =0 { Search }
+      =1 { Search (view {{ hitCount }} result)}
+      other { Search (view {{ hitCount }} results)}
+    }"/> </source>
+      </segment>
+    </unit>
+    <unit id="4020952399040491511">
+      <notes>
+        <note category="location">src/app/test/test.component.html:4,8</note>
+      </notes>
+      <segment>
+        <source>{VAR_PLURAL, plural, =0 {Search } =1 {Search (view <ph id="0" equiv="INTERPOLATION"/> result)} other {Search (view <ph id="1" equiv="INTERPOLATION"/> results)}}</source>
+      </segment>
+    </unit>
+    <unit id="6545621178786913216">
+      <notes>
+        <note category="location">src/app/test/test.component.html:12</note>
+        <note category="location">src/app/test/test.component.html:13</note>
+      </notes>
+      <segment>
         <source>SearchWA</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7804096422523728368" datatype="html">
-        <source>(view <x id="INTERPOLATION" equiv-text="{{ hitCount }}"/> results)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-      </trans-unit>
-    </body>
+      </segment>
+    </unit>
+    <unit id="7804096422523728368">
+      <notes>
+        <note category="location">src/app/test/test.component.html:13</note>
+      </notes>
+      <segment>
+        <source>(view <ph id="0" equiv="INTERPOLATION" disp="{{ hitCount }}"/> results)</source>
+      </segment>
+    </unit>
   </file>
 </xliff>
