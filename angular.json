@@ -10,9 +10,8 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "en",
+        "sourceLocale": "en-US",
         "locales": {
-          "en-US": "src/locale/en-US.xlf",
           "es-US": "src/locale/es-US.xlf"
         }
       },
@@ -39,7 +38,7 @@
           },
           "configurations": {
             "en-US": {
-              "localize": false,
+              "localize": ["en-US"],
               "baseHref": "/en-US/"
             },
             "es-US": {
