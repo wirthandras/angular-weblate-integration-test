@@ -10,8 +10,9 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "en-US",
+        "sourceLocale": "en",
         "locales": {
+          "en-US": "src/locale/en-US.xlf",
           "es-US": "src/locale/es-US.xlf"
         }
       },
