@@ -11,16 +11,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="9036341625315019227" datatype="html">
-        <source>Second translation</source>
-        <target/>
+        <source>Second translationApproved</source>
+        <target>Second translationApproved</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1807398567117820367" datatype="html">
-        <source>Third translation</source>
-        <target/>
+        <source>Third translationApproved</source>
+        <target>Third translationApproved</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">3</context>
@@ -29,8 +29,8 @@
         <note priority="1" from="meaning">Table header</note>
       </trans-unit>
       <trans-unit id="2226815095451076885" datatype="html">
-        <source>Apple</source>
-        <target/>
+        <source>AppleApproved</source>
+        <target>AppleApproved</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
           <context context-type="linenumber">2</context>
@@ -38,8 +38,8 @@
         <note priority="1" from="description">test</note>
       </trans-unit>
       <trans-unit id="1722555695086014110" datatype="html">
-        <source> Test prefix <x id="ICU" equiv-text="{hitCount, plural,        =0 { Search }       =1 { Search (view {{ hitCount }} result)}       other { Search (view {{ hitCount }} results)}     }"/> </source>
-        <target/>
+        <source>Test prefix <x id="ICU" equiv-text="{hitCount, plural,        =0 { Search }       =1 { Search (view {{ hitCount }} result)}       other { Search (view {{ hitCount }} results)}     }"/> </source>
+        <target>Test prefix <x id="ICU" equiv-text="{hitCount, plural,        =0 { Search }       =1 { Search (view {{ hitCount }} result)}       other { Search (view {{ hitCount }} results)}     }"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
           <context context-type="linenumber">4,9</context>
@@ -47,15 +47,15 @@
       </trans-unit>
       <trans-unit id="4020952399040491511" datatype="html">
         <source>{VAR_PLURAL, plural, =0 {Search } =1 {Search (view <x id="INTERPOLATION"/> result)} other {Search (view <x id="INTERPOLATION"/> results)}}</source>
-        <target/>
+        <target>{VAR_PLURAL, plural, =0 {Search } =1 {Search (view <x id="INTERPOLATION"/> result)} other {Search (view <x id="INTERPOLATION"/> results)}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
           <context context-type="linenumber">4,8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6545621178786913216" datatype="html">
-        <source>SearchWA</source>
-        <target/>
+        <source>SearchWAApproved</source>
+        <target>SearchWAApproved</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
           <context context-type="linenumber">12</context>
@@ -67,11 +67,20 @@
       </trans-unit>
       <trans-unit id="7804096422523728368" datatype="html">
         <source>(view <x id="INTERPOLATION" equiv-text="{{ hitCount }}"/> results)</source>
-        <target/>
+        <target>(view <x id="INTERPOLATION" equiv-text="{{ hitCount }}"/> results)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
           <context context-type="linenumber">13</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="8609530448478008386" datatype="html">
+        <source>Intermediate TestApproved</source>
+        <target>Intermediate TestApproved</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/test/test.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">test</note>
       </trans-unit>
     </body>
   </file>
