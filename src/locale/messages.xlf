@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="3586289926317549995" datatype="html">
         <source>App works</source>
@@ -25,11 +25,19 @@
         <note priority="1" from="description">Name of the table</note>
         <note priority="1" from="meaning">Table header</note>
       </trans-unit>
+      <trans-unit id="8609530448478008386" datatype="html">
+        <source>Intermediate Test</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/test/test.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">test</note>
+      </trans-unit>
       <trans-unit id="2226815095451076885" datatype="html">
         <source>Apple</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">2</context>
+          <context context-type="linenumber">3</context>
         </context-group>
         <note priority="1" from="description">test</note>
       </trans-unit>
@@ -41,32 +49,32 @@
     }"/> </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">4,9</context>
+          <context context-type="linenumber">5,10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4020952399040491511" datatype="html">
         <source>{VAR_PLURAL, plural, =0 {Search } =1 {Search (view <x id="INTERPOLATION"/> result)} other {Search (view <x id="INTERPOLATION"/> results)}}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">4,8</context>
+          <context context-type="linenumber">5,9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6545621178786913216" datatype="html">
         <source>SearchWA</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">13</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7804096422523728368" datatype="html">
         <source>(view <x id="INTERPOLATION" equiv-text="{{ hitCount }}"/> results)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/test/test.component.html</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
     </body>
