@@ -4,9 +4,13 @@ run-name: ${{ github.actor }} is run export to Weblate
 on: 
   workflow_dispatch:
 jobs:
+ 
   weblate-export:
     runs-on: ubuntu-latest
     steps:
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"   
     - uses: peterjgrainger/action-create-branch@v2.2.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
