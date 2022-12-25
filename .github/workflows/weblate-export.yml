@@ -25,7 +25,7 @@ jobs:
         node-version: 12
     - run: pwd
     - run: npm ci
-    - run: npm extract-i18n
+    - run: npm run extract-i18n
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Automated Change
