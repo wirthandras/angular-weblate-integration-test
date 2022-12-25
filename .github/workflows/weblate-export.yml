@@ -16,12 +16,12 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        branch: 'weblate-export-${{ env.GITHUB_RUN_NUMBER }}-input'
+        branch: 'weblate-export-${{ github.run_number }}-input'
         sha: '${{ github.event.pull_request.head.sha }}'        
         
     - uses: actions/checkout@v3
       with:
-        ref: 'weblate-export-${{ env.GITHUB_RUN_NUMBER }}-input'
+        ref: 'weblate-export-${{ github.run_number }}-input'
         
     - uses: actions/setup-node@v3
       with:
@@ -37,9 +37,9 @@ jobs:
   create-output-branch:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@weblate-export-${{ env.GITHUB_RUN_NUMBER }}-input
+    - uses: actions/checkout@weblate-export-${{ github.run_number }}-input
     - uses: peterjgrainger/action-create-branch@v2.2.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        branch: 'weblate-export-${{ env.GITHUB_RUN_NUMBER }}-output'  
+        branch: 'weblate-export-${{ github.run_number }}-output'  
