@@ -3,9 +3,11 @@ run-name: ${{ github.actor }} is run export to Weblate
 
 on: 
   workflow_dispatch:
+  
+
 
 env:
-  BRANCH_NAME: Monday
+  WEBLATE_BRANCH_DATE: Today
   
 jobs:
  
