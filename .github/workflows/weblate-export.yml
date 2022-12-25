@@ -17,3 +17,6 @@ jobs:
       with:
         branch: 'weblate-export-${{ steps.date.outputs.date }}'
         sha: '${{ github.event.pull_request.head.sha }}'
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
