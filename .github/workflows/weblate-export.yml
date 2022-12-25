@@ -3,29 +3,39 @@ run-name: ${{ github.actor }} is run export to Weblate
 
 on: 
   workflow_dispatch:
+
+env:
+  BRANCH_NAME: Monday
+  
 jobs:
  
   weblate-export:
     runs-on: ubuntu-latest
     steps:
+    
+    - name: Print Weblate branch date name
+      run: echo "WEBLATE_BRANCH_DATE=${{ steps.date.outputs.date }}" >> $GITHUB_ENV
+      
     - uses: actions/checkout@master
-    - name: Get current date
-      id: date
-      run: echo "::set-output name=date::$(date +'%Y-%m-%d-%H-%M-%S')"   
+    
     - uses: peterjgrainger/action-create-branch@v2.2.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        branch: 'weblate-export-${{ steps.date.outputs.date }}'
+        branch: 'weblate-export-${{ env.WEBLATE_BRANCH_DATE }}-input'
         sha: '${{ github.event.pull_request.head.sha }}'        
+        
     - uses: actions/checkout@v3
       with:
-        ref: 'weblate-export-${{ steps.date.outputs.date }}-input'
+        ref: 'weblate-export-${{ env.WEBLATE_BRANCH_DATE }}-input'
+        
     - uses: actions/setup-node@v3
       with:
         node-version: 12
     - run: npm ci
+    
     - run: npm run extract-i18n
+    
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Automated Change
@@ -33,9 +43,9 @@ jobs:
   create-output-branch:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@weblate-export-${{ steps.date.outputs.date }}-input
+    - uses: actions/checkout@weblate-export-${{ env.WEBLATE_BRANCH_DATE }}-input
     - uses: peterjgrainger/action-create-branch@v2.2.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        branch: 'weblate-export-${{ steps.date.outputs.date }}-output'  
+        branch: 'weblate-export-${{ env.WEBLATE_BRANCH_DATE }}-output'  
