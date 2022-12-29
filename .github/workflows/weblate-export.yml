@@ -46,4 +46,17 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        branch: 'weblate-export-${{ github.run_number }}-output'  
+        branch: 'weblate-export-${{ github.run_number }}-output'
+            
+  change-weblate-branches:
+    needs: create-output-branch
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Deploy Stage
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'http://${{ secrets.WEBLATE_URL }}/api/components/angular-test/angular/'
+        method: 'PATCH'
+        customHeaders: '{"Content-Type": "application/json", "Authorization": "Bearer ${{ secrets.WEBLATE_TOKEN }}"}'
+        data: '{"branch": "weblate-export-${{ github.run_number }}-input", "push_branch": "weblate-export-${{ github.run_number }}-output"}'
