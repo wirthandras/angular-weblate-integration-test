@@ -5,8 +5,33 @@ on:
   workflow_dispatch:
   
 jobs:
+  commit-weblate-changes:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Commit Weblate branches
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'http://${{ secrets.WEBLATE_URL }}/api/projects/angular-test/repository/'
+        method: 'POST'
+        customHeaders: '{"Content-Type": "application/json", "Authorization": "Bearer ${{ secrets.WEBLATE_TOKEN }}"}'
+        data: '{"operation": "commit"}'
+        
+  push-weblate-changes:
+    needs: commit-weblate-changes
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Commit Weblate branches
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'http://${{ secrets.WEBLATE_URL }}/api/projects/angular-test/repository/'
+        method: 'POST'
+        customHeaders: '{"Content-Type": "application/json", "Authorization": "Bearer ${{ secrets.WEBLATE_TOKEN }}"}'
+        data: '{"operation": "push"}'
  
   create-new-branch:
+    needs: push-weblate-changes
     runs-on: ubuntu-latest
     steps:
    
