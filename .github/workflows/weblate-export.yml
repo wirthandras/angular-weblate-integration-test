@@ -33,7 +33,12 @@ jobs:
   create-new-branch:
     needs: push-weblate-changes
     runs-on: ubuntu-latest
+    
     steps:
+    - uses: trstringer/manual-approval@v1
+      with:
+        secret: ${{ github.TOKEN }}
+        approvers: wirthandras
    
     - uses: actions/checkout@v3
     
