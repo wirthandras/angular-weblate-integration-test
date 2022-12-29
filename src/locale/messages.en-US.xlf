@@ -90,6 +90,22 @@
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="4211078421037646539" datatype="html">
+        <source>Weblate export automated export test#4</source>
+        <target state="translated">Weblate export automated export test#4</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6838506464024526941" datatype="html">
+        <source>Weblate export automated export test#55</source>
+        <target state="translated">Weblate export automated export test#55</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
