@@ -48,12 +48,12 @@ jobs:
       with:
         branch: 'weblate-export-${{ github.run_number }}-output'
             
-  change-weblate-branches:
+  update-weblate-branches:
     needs: create-output-branch
     runs-on: ubuntu-latest
     
     steps:
-    - name: Deploy Stage
+    - name: Update Weblate branches
       uses: fjogeleit/http-request-action@v1
       with:
         url: 'http://${{ secrets.WEBLATE_URL }}/api/components/angular-test/angular/'
