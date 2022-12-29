@@ -39,6 +39,7 @@ jobs:
       with:
         secret: ${{ github.TOKEN }}
         approvers: wirthandras
+        issue-title: "Wait for Localization Merge to master from output branch"
    
     - uses: actions/checkout@v3
     
