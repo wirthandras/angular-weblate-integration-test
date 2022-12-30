@@ -38,12 +38,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v4
-      with:
-        token: ${{ github.TOKEN }}
-        assignees: wirthandras
-        branch: '${{ github.event.inputs.previousBranch }}'
+    - name: create pull request
+      run: gh pr create -B master -H ${{ github.event.inputs.previousBranch }} --title 'Localization Merge ${{ github.event.inputs.previousBranch }} into master' --body 'Localization Pull Request Created by Github action'
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
   create-new-branch:
     needs: create-pull-request
