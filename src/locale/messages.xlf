@@ -81,6 +81,13 @@
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="3131286521846490729" datatype="html">
+        <source>Hello World2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="8609530448478008386" datatype="html">
         <source>Intermediate Test</source>
         <context-group purpose="location">
