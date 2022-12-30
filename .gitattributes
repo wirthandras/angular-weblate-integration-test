@@ -1,0 +1,3 @@
+src/locale/messages.en-US.xlf merge=ours
+src/locale/messages.es-US.xlf merge=ours
+src/locale/messages.xlf merge=ours
