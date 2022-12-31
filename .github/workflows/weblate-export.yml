@@ -42,7 +42,10 @@ jobs:
       with:
         ref: ${{ github.event.inputs.previousBranch }}
         
-    - run: git checkout master
+    - name: 'Fetch master branch'
+      run: |
+        git fetch origin master --depth 1
+        git checkout origin/master
     
     - run: git checkout ${{ github.event.inputs.previousBranch }}
         
