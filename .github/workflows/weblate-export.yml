@@ -42,7 +42,9 @@ jobs:
       with:
         ref: ${{ github.event.inputs.previousBranch }}
         
-    - run: git fetch --all
+    - run: git checkout master
+    
+    - run: git checkout ${{ github.event.inputs.previousBranch }}
         
     - run: git config --global merge.ours.driver true
     
