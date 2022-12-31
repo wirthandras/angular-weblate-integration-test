@@ -37,12 +37,12 @@ jobs:
     needs: push-weblate-changes
     runs-on: ubuntu-latest
     
-    steps:
-    - uses: actions/checkout@v3
-    
+    steps:    
     - uses: actions/checkout@v3
       with:
         ref: ${{ github.event.inputs.previousBranch }}
+        
+    - run: git fetch origin
         
     - run: git config --global merge.ours.driver true
     
