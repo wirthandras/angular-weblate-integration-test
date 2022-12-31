@@ -43,6 +43,8 @@ jobs:
         ref: ${{ github.event.inputs.previousBranch }}
         
     - run: git config --global merge.ours.driver true
+    
+    - run: git merge master
         
     - name: create pull request
       run: gh pr create -B master --title 'Localization Merge ${{ github.event.inputs.previousBranch }} into master' --body 'Localization Pull Request Created by Github action'
