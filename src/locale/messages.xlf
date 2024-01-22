@@ -89,7 +89,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="1728473515020571626" datatype="html">
-        <source>Hello World3</source>
+        <source xml:space="preserve">Hello World3</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">13</context>
@@ -112,7 +112,7 @@
         <note priority="1" from="description">test</note>
       </trans-unit>
       <trans-unit id="1722555695086014110" datatype="html">
-        <source> Test prefix <x id="ICU" equiv-text="{hitCount, plural, 
+        <source> Test prefix <x id="ICU" equiv-text="{hitCount, plural,
       =0 { Search }
       =1 { Search (view {{ hitCount }} result)}
       other { Search (view {{ hitCount }} results)}
