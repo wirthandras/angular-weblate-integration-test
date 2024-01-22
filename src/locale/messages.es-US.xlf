@@ -233,13 +233,7 @@
       </trans-unit>
       <trans-unit id="1728473515020571626" datatype="html">
         <source>Hello World3 multiline 1 multiline 2</source>
-        <target state="translated">SP Hello World3
-
-multiline 2 SP
-
-
-
-multiline 3 SP</target>
+        <target state="translated">SP Hello World3 multiline 2 SP multiline 3 SP</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">13</context>
@@ -251,6 +245,22 @@ multiline 3 SP</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3330244922547581181" datatype="html">
+        <source xml:space="preserve">Hello World3 test ride
+
+bla bla
+
+bla blaline2</source>
+        <target state="translated">Hello World3 test ride
+
+bla bla SP
+
+bla blaline2 SP</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
     </body>
